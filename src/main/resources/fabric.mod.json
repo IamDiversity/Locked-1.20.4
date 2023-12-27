@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "locked",
+	"version": "${version}",
+	"name": "Locked",
+	"description": "This is a game mode named \"Locked\".",
+	"authors": [
+		"DiversityCraft"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/locked/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.diversity.locked.Locked"
+		],
+		"client": [
+			"net.diversity.locked.LockedClient"
+		],
+		"fabric-datagen": [
+			"net.diversity.locked.LockedDataGenerator"
+		]
+	},
+	"mixins": [
+		"locked.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.3",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
