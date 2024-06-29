@@ -57,7 +57,7 @@ public class CellBarsBlock extends Block {
         }
 
         public boolean hasDirection(Direction dir, BlockState neighbourState) {
-            //return switch(dir) {
+            //*return switch(dir) {
                 /*case NORTH -> switch (this) {
                     case north, north_east, north_west -> true;
                     default -> false;
